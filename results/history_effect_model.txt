@@ -1,0 +1,32 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              deviation   R-squared:                       0.008
+Model:                            OLS   Adj. R-squared:                  0.007
+Method:                 Least Squares   F-statistic:                     7.159
+Date:                Fri, 01 May 2026   Prob (F-statistic):           1.75e-09
+Time:                        18:22:12   Log-Likelihood:                -4668.9
+No. Observations:                7176   AIC:                             9356.
+Df Residuals:                    7167   BIC:                             9418.
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    0.1777      0.018      9.769      0.000       0.142       0.213
+C(history_mode)[T.no_history]               -0.0252      0.019     -1.328      0.184      -0.062       0.012
+C(order)[T.reverse]                         -0.0321      0.011     -2.926      0.003      -0.054      -0.011
+C(domain)[T.deception]                       0.0633      0.017      3.641      0.000       0.029       0.097
+C(domain)[T.duty]                            0.0760      0.017      4.370      0.000       0.042       0.110
+C(domain)[T.epistemic]                       0.0797      0.017      4.587      0.000       0.046       0.114
+C(domain)[T.manipulation]                    0.0526      0.017      3.024      0.003       0.018       0.087
+commitment                                  -0.0238      0.005     -4.363      0.000      -0.035      -0.013
+commitment:C(history_mode)[T.no_history]     0.0208      0.008      2.683      0.007       0.006       0.036
+==============================================================================
+Omnibus:                     4345.433   Durbin-Watson:                   1.102
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            35949.843
+Skew:                           2.902   Prob(JB):                         0.00
+Kurtosis:                      12.303   Cond. No.                         16.8
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

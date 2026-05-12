@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Raw model output — large, regenerable from scripts + config
+data/generations.jsonl
+
